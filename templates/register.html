@@ -1,0 +1,14 @@
+<html>
+    <head>
+    <title>{{message1}}</title>
+    </head>
+        <h1>{{message1}}</h1>
+    	<h2>{{message2}}</h2>
+    <body>
+   	<form method='POST' action=''> {% csrf_token %}
+		{{form.as_p}}
+		<input type="submit" name="submit" value="Register">
+	</form> 
+ 
+    </body>
+</html>
